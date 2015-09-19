@@ -1,0 +1,4 @@
+mailcount=`curl -u devonhollowood:uvuspwrgghziydpn --silent https://mail.google.com/mail/feed/atom | sed -n -E 's/.*<fullcount>([0-9]+).*/\1/p'`
+if [ $mailcount -gt 0 ]
+then echo "[✉: $mailcount] "
+fi
