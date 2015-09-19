@@ -1,0 +1,2 @@
+*/20 * * * * /usr/local/bin/terminal-notifier -title 'Working hard?' -message 'Stand up and walk around a bit'
+0 * * * * /usr/local/bin/terminal-notifier -title 'Getting thirsty?' -message 'Drink some water'
