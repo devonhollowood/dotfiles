@@ -105,6 +105,7 @@ let g:syntastic_check_on_wq = 0
 
 "syntastic checker options
 let g:syntastic_python_checkers = ['python', 'pylint']
+let g:syntastic_sh_checkers = ['sh', 'shellcheck']
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11'
 
