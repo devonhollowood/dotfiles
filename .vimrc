@@ -22,7 +22,7 @@ Plugin 'scrooloose/syntastic'
 
 " Language-specific
 Plugin 'rust-lang/rust.vim'
-Plugin 'LaTeX-Box-Team/LaTeX-Box'
+" Plugin 'LaTeX-Box-Team/LaTeX-Box' " trial removal
 Plugin 'bitc/vim-hdevtools'
 
 " Appearance
