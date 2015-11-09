@@ -18,11 +18,9 @@ Plugin 'tpope/vim-sensible'
 
 " General coding
 Plugin 'scrooloose/syntastic'
-" Plugin 'Valloric/YouCompleteMe' " trial removal
 
 " Language-specific
 Plugin 'rust-lang/rust.vim'
-" Plugin 'LaTeX-Box-Team/LaTeX-Box' " trial removal
 Plugin 'bitc/vim-hdevtools'
 
 " Appearance
