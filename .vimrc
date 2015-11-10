@@ -86,10 +86,6 @@ au FileType crontab setlocal bkc=yes
 "set up git
 au FileType gitcommit setlocal spell
 
-"set up youcompleteme
-let g:ycm_extra_conf_globlist=['~/Documents/Work/Tesla/matcha/.ycm_extra_conf.py','~/Documents/Programming/.ycm_extra_conf.py','/Users/devon/Dropbox/Crypto101/.ycm_extra_conf.py']
-let g:ycm_always_populate_location_list=1
-
 "airline options
 let g:airline#extensions#tabline#enabled = 1
 
