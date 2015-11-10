@@ -86,6 +86,18 @@ au FileType crontab setlocal bkc=yes
 "set up git
 au FileType gitcommit setlocal spell
 
+"set up text files
+filetype plugin on
+augroup pencil
+    autocmd!
+    autocmd FileType markdown,mkd   call pencil#init()
+    autocmd FileType markdown,mkd   set colorcolumn&vim
+    autocmd FileType text           call pencil#init()
+    autocmd FileType text           set colorcolumn&vim
+    autocmd FileType tex,plaintext,context  call pencil#init()
+    autocmd FileType tex,plaintext,context  set colorcolumn&vim
+augroup END
+
 "airline options
 let g:airline#extensions#tabline#enabled = 1
 
