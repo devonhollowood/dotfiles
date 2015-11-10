@@ -74,8 +74,8 @@ set shiftwidth=4
 set expandtab
 
 "set up colorscheme
-colorscheme solarized
 let g:solarized_termcolors=256
+colorscheme solarized
 
 "set up bash
 let g:is_bash=1
