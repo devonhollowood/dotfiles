@@ -92,9 +92,7 @@ augroup pencil
     autocmd!
     autocmd FileType markdown,mkd   call pencil#init()
     autocmd FileType markdown,mkd   set colorcolumn&vim
-    autocmd FileType text           call pencil#init()
     autocmd FileType text           set colorcolumn&vim
-    autocmd FileType text           set conceallevel=0
     autocmd FileType tex,plaintext,context  call pencil#init()
     autocmd FileType tex,plaintext,context  set colorcolumn&vim
     autocmd FileType tex,plaintext,context  set conceallevel=0
