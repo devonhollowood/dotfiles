@@ -28,8 +28,6 @@ Plug 'jez/vim-superman'
 Plug 'rking/ag.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
-" Trial Plugs
-Plug 'godlygeek/tabular'
 call plug#end()
 
 "basic options
