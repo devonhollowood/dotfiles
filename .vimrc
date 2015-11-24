@@ -28,6 +28,10 @@ Plug 'jez/vim-superman'
 Plug 'rking/ag.vim'
 Plug 'christoomey/vim-tmux-navigator'
 
+" Trial Plugins
+Plug 'junegunn/vim-easy-align'
+Plug 'junegunn/goyo.vim'
+
 call plug#end()
 
 "basic options
