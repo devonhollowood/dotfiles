@@ -6,6 +6,9 @@ Plug 'tpope/vim-sensible'
 
 " General coding
 Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-commentary'
+Plug 'reedes/vim-pencil'
+Plug 'majutsushi/tagbar'
 
 " Language-specific
 Plug 'rust-lang/rust.vim'
@@ -15,19 +18,18 @@ Plug 'bitc/vim-hdevtools'
 Plug 'flazz/vim-colorschemes'
 Plug 'bling/vim-airline'
 
+" File Navigation
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+
 " Integration
 Plug 'tpope/vim-fugitive'
 Plug 'jez/vim-superman'
-
-" Trial Plugs
 Plug 'rking/ag.vim'
 Plug 'christoomey/vim-tmux-navigator'
-Plug 'scrooloose/nerdtree'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tpope/vim-commentary'
-Plug 'reedes/vim-pencil'
+
+" Trial Plugs
 Plug 'godlygeek/tabular'
-Plug 'majutsushi/tagbar'
 call plug#end()
 
 "basic options
