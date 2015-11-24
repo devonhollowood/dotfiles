@@ -1,60 +1,34 @@
-" Vundle
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
+call plug#begin('~/.vim/bundle')
 " My Plugins
 
 " Defaults
-Plugin 'tpope/vim-sensible'
+Plug 'tpope/vim-sensible'
 
 " General coding
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
 " Language-specific
-Plugin 'rust-lang/rust.vim'
-Plugin 'bitc/vim-hdevtools'
+Plug 'rust-lang/rust.vim'
+Plug 'bitc/vim-hdevtools'
 
 " Appearance
-Plugin 'flazz/vim-colorschemes'
-Plugin 'bling/vim-airline'
+Plug 'flazz/vim-colorschemes'
+Plug 'bling/vim-airline'
 
 " Integration
-Plugin 'tpope/vim-fugitive'
-Plugin 'jez/vim-superman'
+Plug 'tpope/vim-fugitive'
+Plug 'jez/vim-superman'
 
-" Trial Plugins
-Plugin 'rking/ag.vim'
-Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'scrooloose/nerdtree'
-Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'tpope/vim-commentary'
-Plugin 'reedes/vim-pencil'
-Plugin 'godlygeek/tabular'
-Plugin 'majutsushi/tagbar'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
+" Trial Plugs
+Plug 'rking/ag.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'scrooloose/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tpope/vim-commentary'
+Plug 'reedes/vim-pencil'
+Plug 'godlygeek/tabular'
+Plug 'majutsushi/tagbar'
+call plug#end()
 
 "basic options
 syntax enable       " Show syntax highlighting
