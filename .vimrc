@@ -31,10 +31,7 @@ Plug 'christoomey/vim-tmux-navigator'
 call plug#end()
 
 "basic options
-syntax enable       " Show syntax highlighting
 set background=dark " Set dark background
-set ruler           " Show location in file
-set backspace=2     " Can backspace over anything
 set colorcolumn=80  " Highlight the 80th column
 set hidden          " Allow switching tabs without saving
 
