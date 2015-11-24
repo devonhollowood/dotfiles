@@ -57,7 +57,7 @@ filetype plugin indent on    " required
 " Put your non-Plugin stuff after this line
 
 "basic options
-syntax on           " Show syntax highlighting
+syntax enable       " Show syntax highlighting
 set background=dark " Set dark background
 set ruler           " Show location in file
 set backspace=2     " Can backspace over anything
