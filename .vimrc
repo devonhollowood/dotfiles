@@ -83,6 +83,10 @@ autocmd FileType python set colorcolumn=100
 "Rust
 autocmd FileType rust set colorcolumn=100
 
+"Haskell
+autocmd Filetype haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
+autocmd FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
+
 "airline options
 let g:airline#extensions#tabline#enabled = 1
 
