@@ -38,15 +38,18 @@ call plug#end()
 set background=dark " Set dark background
 set colorcolumn=80  " Highlight the 80th column
 set hidden          " Allow switching tabs without saving
+set shiftround      " Round indentations to multiples of shiftwidth
 
 "highlight extra spaces
 match ErrorMsg '\s\+$'
 
+let mapleader = '\<space>'
+
 "set up tabs
-set smartindent
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set smartindent     " Do smart auto-indenting at beginning of line
+set tabstop=4       " Tabs are 4 spaces wide
+set shiftwidth=4    " Shifts are 4 spaces wide
+set expandtab       " Tabs are made of spaces
 
 "set up colorscheme
 colorscheme solarized
@@ -63,16 +66,16 @@ au FileType gitcommit setlocal spell
 "filetype specific
 
 "Markdown
-autocmd FileType markdown,mkd   call pencil#init()
-autocmd FileType markdown,mkd   set colorcolumn&vim
+autocmd FileType markdown,mkd call pencil#init()
+autocmd FileType markdown,mkd set colorcolumn&vim
 
 "Text
-autocmd FileType text           set colorcolumn&vim
+autocmd FileType text set colorcolumn&vim
 
 "Tex
-autocmd FileType tex,plaintext,context  call pencil#init()
-autocmd FileType tex,plaintext,context  set colorcolumn&vim
-autocmd FileType tex,plaintext,context  set conceallevel=0
+autocmd FileType tex,plaintext,context call pencil#init()
+autocmd FileType tex,plaintext,context set colorcolumn&vim
+autocmd FileType tex,plaintext,context set conceallevel=0
 
 "Python
 autocmd FileType python set colorcolumn=100
