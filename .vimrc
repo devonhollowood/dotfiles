@@ -43,7 +43,7 @@ set shiftround      " Round indentations to multiples of shiftwidth
 "highlight extra spaces
 match ErrorMsg '\s\+$'
 
-let mapleader = '\<space>'
+let mapleader = ","
 
 "set up tabs
 set smartindent     " Do smart auto-indenting at beginning of line
