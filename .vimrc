@@ -51,6 +51,10 @@ set tabstop=4       " Tabs are 4 spaces wide
 set shiftwidth=4    " Shifts are 4 spaces wide
 set expandtab       " Tabs are made of spaces
 
+"set up spellcheck
+set spelllang=en_us
+nnoremap <leader>s :set spell!<CR>
+
 "set up colorscheme
 colorscheme solarized
 
