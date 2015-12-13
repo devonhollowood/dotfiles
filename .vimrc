@@ -70,14 +70,14 @@ au FileType gitcommit setlocal spell
 "filetype specific
 
 "Markdown
-autocmd FileType markdown,mkd call pencil#init()
+autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
 autocmd FileType markdown,mkd set colorcolumn&vim
 
 "Text
 autocmd FileType text set colorcolumn&vim
 
 "Tex
-autocmd FileType tex,plaintext,context call pencil#init()
+autocmd FileType tex,plaintext,context call pencil#init({'wrap': 'soft'})
 autocmd FileType tex,plaintext,context set colorcolumn&vim
 autocmd FileType tex,plaintext,context set conceallevel=0
 
