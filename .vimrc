@@ -13,6 +13,7 @@ Plug 'majutsushi/tagbar'
 " Language-specific
 Plug 'rust-lang/rust.vim'
 Plug 'bitc/vim-hdevtools'
+Plug 'lambdatoast/elm.vim'
 
 " Appearance
 Plug 'flazz/vim-colorschemes'
