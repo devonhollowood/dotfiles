@@ -32,6 +32,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " Trial Plugins
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-unimpaired'
 
 call plug#end()
 
