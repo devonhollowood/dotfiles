@@ -33,6 +33,7 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/goyo.vim'
 Plug 'tpope/vim-unimpaired'
+Plug 'dietsche/vim-lastplace'
 
 call plug#end()
 
