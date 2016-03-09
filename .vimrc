@@ -14,6 +14,7 @@ Plug 'majutsushi/tagbar'
 Plug 'rust-lang/rust.vim'
 Plug 'bitc/vim-hdevtools'
 Plug 'lambdatoast/elm.vim'
+Plug 'wlangstroth/vim-racket'
 
 " Appearance
 Plug 'flazz/vim-colorschemes'
