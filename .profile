@@ -9,7 +9,7 @@ export DYLD_LIBRARY_PATH
 # shellcheck source=/dev/null
 [[ -e $HOME/.bash_aliases ]] && source "$HOME/.bash_aliases"
 vman() {
-  if vim -c "SuperMan $*"; then
+  if ! vim -c "SuperMan $*"; then
     echo "No manual entry for $*"
   fi
 }
