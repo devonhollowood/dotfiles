@@ -142,7 +142,7 @@ let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -Wpedantic'
 let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'clang_check', 'clang_tidy']
 let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'clang_check', 'clang_tidy']
-let g:syntastic_tex_checkers = ['chktex', 'proselint']
+let g:syntastic_tex_checkers = ['chktex']
 
 "set up NERDTree
 map <C-n> :NERDTreeToggle<CR>
