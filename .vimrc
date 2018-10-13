@@ -47,6 +47,7 @@ set background=dark " Set dark background
 set colorcolumn=80  " Highlight the 80th column
 set hidden          " Allow switching tabs without saving
 set smartcase       " search is case-insensitive by default if all lowercase
+set mouse=a
 
 "highlight extra spaces
 match ErrorMsg '\s\+$'
