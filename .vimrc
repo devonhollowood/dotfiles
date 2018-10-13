@@ -8,7 +8,7 @@ Plug 'tpope/vim-sensible'
 Plug 'ctjhoa/spacevim'
 
 " General coding
-Plug 'scrooloose/syntastic'
+Plug 'w0rp/ale'
 Plug 'tpope/vim-commentary'
 Plug 'reedes/vim-pencil'
 Plug 'majutsushi/tagbar'
@@ -95,6 +95,9 @@ if has("persistent_undo")
   set undofile
 endif
 
+"set up ale
+let g:ale_completion_enabled = 1
+
 "filetype specific
 
 "Markdown
@@ -124,25 +127,6 @@ autocmd FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
 
 "airline options
 let g:airline#extensions#tabline#enabled = 1
-
-"syntastic general
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
-"syntastic checker options
-let g:syntastic_python_checkers = ['python', 'pylint']
-let g:syntastic_sh_checkers = ['sh', 'shellcheck']
-"let g:syntastic_haskell_checkers = ['hlint']
-let g:syntastic_cpp_compiler = 'clang++'
-let g:syntastic_cpp_compiler_options = '-std=c++11 -Wall -Wextra -Wpedantic'
-let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'clang_check', 'clang_tidy']
-let g:syntastic_cpp_checkers = ['gcc', 'cppcheck', 'clang_check', 'clang_tidy']
-let g:syntastic_tex_checkers = ['chktex']
 
 "set up NERDTree
 map <C-n> :NERDTreeToggle<CR>
