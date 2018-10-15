@@ -68,7 +68,7 @@ set spelllang=en_us
 nnoremap <leader>s :set spell!<CR>
 
 "set up colorscheme
-if filereadable(expand("~/.vimrc_background"))
+if filereadable(expand('~/.vimrc_background'))
   let base16colorspace=256
   source ~/.vimrc_background
 endif
@@ -82,7 +82,7 @@ hi clear SpellLocal
 hi SpellLocal cterm=underline
 
 "set up undo
-if has("persistent_undo")
+if has('persistent_undo')
   set undodir=~/.undodir/
   set undofile
 endif
@@ -95,7 +95,10 @@ let g:airline#extensions#tabline#enabled = 1
 
 "set up NERDTree
 map <C-n> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+augroup nerdtree
+    autocmd!
+    autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+augroup END
 
 "set up Tagbar
 nmap <F8> :TagbarToggle<CR>
