@@ -81,15 +81,6 @@ hi SpellCap cterm=underline
 hi clear SpellLocal
 hi SpellLocal cterm=underline
 
-"set up bash
-let g:is_bash=1
-
-"set up crontab
-au FileType crontab setlocal bkc=yes
-
-"set up git
-au FileType gitcommit setlocal spell
-
 "set up undo
 if has("persistent_undo")
   set undodir=~/.undodir/
@@ -98,33 +89,6 @@ endif
 
 "set up ale
 let g:ale_completion_enabled = 1
-
-"filetype specific
-
-"Markdown
-autocmd FileType markdown,mkd call pencil#init({'wrap': 'soft'})
-autocmd FileType markdown,mkd set colorcolumn&vim
-
-"Text
-autocmd FileType text set colorcolumn&vim
-
-"Tex
-autocmd FileType tex,plaintext,context call pencil#init({'wrap': 'soft'})
-autocmd FileType tex,plaintext,context set colorcolumn&vim
-autocmd FileType tex,plaintext,context set conceallevel=0
-autocmd FileType tex,plaintext,context set tabstop=2
-autocmd FileType tex,plaintext,context set shiftwidth=2
-
-"Python
-autocmd FileType python set colorcolumn=100
-
-"Rust
-autocmd FileType rust set colorcolumn=100
-let g:rustfmt_autosave = 1
-
-"Haskell
-autocmd Filetype haskell nnoremap <buffer> <F1> :HdevtoolsType<CR>
-autocmd FileType haskell nnoremap <buffer> <silent> <F2> :HdevtoolsClear<CR>
 
 "airline options
 let g:airline#extensions#tabline#enabled = 1
