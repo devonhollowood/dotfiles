@@ -29,6 +29,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " Integration
 Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
 Plug 'jez/vim-superman'
 Plug 'rking/ag.vim'
 Plug 'christoomey/vim-tmux-navigator'
